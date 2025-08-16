@@ -20,5 +20,33 @@ Noise: https://drive.google.com/file/d/1rMORIyHCEB0l4CMoBl33rDLRJlM1qV0a/view?us
 
 Methodology:
 
-this is what i have written so far 
-so please dont repat what is alreadty written in methodolgy 
+The project workflow can be divided into two main phases: Model Training and Real-time Prediction & Volume Control.
+
+1. Model Training
+
+Data Preprocessing:
+
+All audio files were standardized by converting them to mono, resampling to 44.1 kHz, and trimming or padding them to a fixed duration of 5 seconds.
+Mel spectrograms with 64 mel bins were computed for each audio sample, then normalized to ensure consistent scale across the dataset.
+
+Model Architecture:
+
+A Convolutional Neural Network (CNN) was designed to classify audio into three categories: singing, speech, and noise.
+The architecture consists of two convolutional layers (with ReLU activation and max pooling), followed by fully connected layers for classification.
+Cross-entropy loss was used, and training was performed using the Adam optimizer.
+The model with the highest validation accuracy was saved for deployment.
+
+2. Real-time Prediction & Volume Control
+
+Live Audio Capture:
+
+A microphone stream is continuously monitored using the sounddevice library. Incoming audio is segmented into 5-second windows and preprocessed in the same way as the training data.
+
+Inference:
+
+The trained CNN model predicts the class of each segment in real time.
+
+Dynamic Volume Adjustment:
+
+If the detected class is speech, the system executes an AppleScript command to lower the system volume while the music is playing.
+If the detected class is singing or noise, the volume remains unchanged to avoid disrupting the listening experience.
