@@ -46,7 +46,7 @@ The proposed CNN model achieved an accuracy of 93.16% on the test dataset. This 
 Drawbacks and future scope:
 
 1. This project works best for enligh langauges and mostly causes errors for other languages
-2. 2. Better results can be obtained by using ;arger datasets
+2. Better results can be obtained by using larger datasets
 3. If the model predicts singing, the system can be made more accurate to make sure that the singing input is the same song as the song being played
 4. The system will work well only when a listening device is used, if the song is played on speaker, then the model will listen to the song and predict input as singing, future model can use a loopback filter or virtual audio routing to exclude the device’s own playback from the microphone input.
 
