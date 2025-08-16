@@ -8,7 +8,7 @@ Hence, this project is built to predict if input is noise, speech or singing and
 
 Dataset:
 
-The dataset consits of three folder, each having cleaned audios of sining, speech and noise to train a CNN model and save the best model to use it to predict the input while listening to music
+The dataset consits of three folder, each having cleaned audios of sining, speech and noise to train a CNN model and save the best model to use it to predict the input while listening to music.
 The dataset links are as follows 
 
 Singing: https://drive.google.com/file/d/1LJAxozDu7r9jFe5qtdL55J7yJsyvt4QV/view?usp=sharing
@@ -45,13 +45,13 @@ The proposed CNN model achieved an accuracy of 93.16% on the test dataset. This 
 
 Drawbacks and future scope:
 
-1. This project works best for enligh langauges and mostly causes errors for other languages
-2. Better results can be obtained by using larger datasets
-3. If the model predicts singing, the system can be made more accurate to make sure that the singing input is the same song as the song being played
+1. This project works best for enligh langauges and mostly causes errors for other languages.
+2. Better results can be obtained by using larger datasets.
+3. If the model predicts singing, the system can be made more accurate to make sure that the singing input is the same song as the song being played.
 4. The system will work well only when a listening device is used, if the song is played on speaker, then the model will listen to the song and predict input as singing, future model can use a loopback filter or virtual audio routing to exclude the device’s own playback from the microphone input.
 
 Applications:
 
-1. Smart headphones and earphones
-2. Video conferencing noise suppression with very slight change in code
-3. Real-time voice/music mixing tools
+1. Smart headphones and earphones.
+2. Video conferencing noise suppression with very slight change in code.
+3. Real-time voice/music mixing tools.
