@@ -1,7 +1,5 @@
 #Volume Simulation 
 
- VolumeSimulation
-
 Description:
 
 This project is inspired by the intelligent volume adjustment feature in Apple AirPods, which lowers the music volume when voice input is detected. However, traditional implementations often mistake singing along for speech and reduce the volume which will not give a good listening experince. 
