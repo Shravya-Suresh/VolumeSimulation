@@ -35,7 +35,8 @@ class MusicPlayer:
         self.classification_active = False
         
         # Audio classification setup
-        self.model = self.load_model_from_checkpoint("/Users/mac/Downloads/content/saved_models_new20250721_184805/best_model_weights.pth")
+        #self.model = self.load_model_from_checkpoint("/Users/mac/Downloads/content/saved_models_new20250721_184805/best_model_weights.pth")
+        self.model = self.load_model_from_checkpoint ("/Users/mac/Desktop/VolumeSimulation/AirPod-Project/content/saved_models_new20250721_184805/best_model_weights.pth")
         self.label_map = {0: "Singing", 1: "Speaking", 2: "Noise"}
         
         # GUI Setup
