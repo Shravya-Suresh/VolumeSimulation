@@ -59,5 +59,6 @@ Applications:
 ## 🎥 Demo
 
 ▶ [Watch the Demo Video](https://drive.google.com/file/d/15p-LMeNbUBdl0f0drQRK1IcZYpIammoV/view?usp=drive_link)
-Due to the minitaion of not being able to record what is being played, only input voice is heard in the video, but when the method is followed and a bluetooth device is used, the audio hearing of song and prediction of the sound as input in microphone will happen.
+
+Due to the limitaion of not being able to record what is being played, only input voice is heard in the video, but when the method is followed and a bluetooth device is used, the audio hearing of song and prediction of the sound as input in microphone will happen.
 
