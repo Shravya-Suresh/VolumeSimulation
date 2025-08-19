@@ -36,8 +36,8 @@ class MusicPlayer:
         
         # Audio classification setup
         #self.model = self.load_model_from_checkpoint("/Users/mac/Downloads/content/saved_models_new20250721_184805/best_model_weights.pth")
-        self.model = self.load_model_from_checkpoint ("/Users/mac/Desktop/VolumeSimulation/AirPod-Project/content/saved_models_new20250721_184805/best_model_weights.pth")
-        self.label_map = {0: "Singing -> No volume reduced", 1: "Speaking -> Volume reduced", 2: "Noise -> No volume reduced"}
+        self.model = self.load_model_from_checkpoint ("content/saved_models_new20250721_184805/best_model_weights.pth")
+        self.label_map = {0: "Singing", 1: "Speaking", 2: "Noise"}
         
         # GUI Setup
         self.setup_ui()
@@ -55,7 +55,6 @@ class MusicPlayer:
         
         # Load background image
         try:
-            #img_path = "/Users/mac/Desktop/AirPod-Project/bg.webp"
             img_path = "bg.webp"
             self.load_background_image(img_path)
         except Exception as e:
@@ -353,7 +352,6 @@ class MusicPlayer:
         self.cover_canvas.delete("all")
         
         try:
-            #cover_path = "/Users/mac/Desktop/AirPod-Project/small_bg.jpeg"
             cover_path = "small_bg.jpeg"
             img = Image.open(cover_path)
             img = img.resize((300, 300), Image.LANCZOS)
