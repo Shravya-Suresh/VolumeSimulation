@@ -58,5 +58,5 @@ Applications:
 
 ## 🎥 Demo
 
-▶ [Watch the Demo Video](https://drive.google.com/file/d/15p-LMeNbUBdl0f0drQRK1IcZYpIammoV/preview)
+▶ [Watch the Demo Video](https://drive.google.com/file/d/15p-LMeNbUBdl0f0drQRK1IcZYpIammoV/view?usp=drive_link)
 
