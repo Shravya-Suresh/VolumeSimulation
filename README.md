@@ -55,3 +55,8 @@ Applications:
 1. Smart headphones and earphones.
 2. Video conferencing noise suppression with very slight change in code.
 3. Real-time voice/music mixing tools.
+
+## 🎥 Demo
+
+▶ [Watch the Demo Video](https://drive.google.com/file/d/15p-LMeNbUBdl0f0drQRK1IcZYpIammoV/preview)
+
