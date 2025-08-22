@@ -1,0 +1,5 @@
+Pillow==11.3.0
+pygame==2.5.2
+sounddevice==0.5.2
+torch==2.5.1+cu121
+torchaudio==2.5.1+cu121
