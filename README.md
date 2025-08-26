@@ -1,12 +1,12 @@
-Volume Simulation 
+# Volume Simulation 
 
-Description:
+### Description:
 
 This project is inspired by the intelligent volume adjustment feature in Apple AirPods, which lowers the music volume when voice input is detected. However, traditional implementations often mistake singing along for speech and reduce the volume which will not give a good listening experince. 
 Hence, this project is built to predict if input is noise, speech or singing and based on that, if input is singing or noise, the volume will note reduce but if it is speaking only then the volume will reduce.
 
 
-Dataset:
+### Dataset:
 
 The dataset consits of three folder, each having cleaned audios of sining, speech and noise to train a CNN model and save the best model to use it to predict the input while listening to music.
 The dataset links are as follows 
@@ -18,7 +18,7 @@ Speech: https://drive.google.com/file/d/1dY4LjmzLQLIJxLdT_UDhFzKhVsKsH1ff/view?u
 Noise: https://drive.google.com/file/d/1rMORIyHCEB0l4CMoBl33rDLRJlM1qV0a/view?usp=sharing
 
 
-Methodology:
+### Methodology:
 
 The project workflow can be divided into two main phases: Model Training and Real-time Prediction & Volume Control.
 
@@ -39,18 +39,18 @@ b. Inference: The trained CNN model predicts the class of each segment in real t
 
 c. Dynamic Volume Adjustment: If the detected class is speech, the system executes an AppleScript command to lower the system volume while the music is playing. If the detected class is singing or noise, the volume remains unchanged to avoid disrupting the listening experience.
 
-Results:
+### Results:
 
 The proposed CNN model achieved an accuracy of 93.16% on the test dataset. This indicates that the system can reliably distinguish between singing, speech, and background noise in most cases. The evaluation was conducted on unseen audio samples after preprocessing into mel spectrograms, ensuring that the model’s performance reflects real-world applicability. While accuracy is the primary reported metric, qualitative testing also showed that the model responded promptly and consistently during live audio simulation.
 
-Drawbacks and future scope:
+### Drawbacks and future scope:
 
 1. This project works best for enligh langauges and mostly causes errors for other languages.
 2. Better results can be obtained by using larger datasets.
 3. If the model predicts singing, the system can be made more accurate to make sure that the singing input is the same song as the song being played.
 4. The system will work well only when a listening device is used, if the song is played on speaker, then the model will listen to the song and predict input as singing, future model can use a loopback filter or virtual audio routing to exclude the device’s own playback from the microphone input.
 
-Applications:
+### Applications:
 
 1. Smart headphones and earphones.
 2. Video conferencing noise suppression with very slight change in code.
